@@ -1,0 +1,36 @@
+---
+sidebar: sidebar
+permalink: task-gcp-enable-data-services.html
+keywords: google buckets, google storage, google cloud storage working environment, google cloud storage buckets, system
+summary: When you discover Google Cloud Storage buckets in the NetApp Console, you can use NetApp data services for backup, tiering, and data synchronization.
+---
+
+= Use NetApp data services with Google Cloud Storage buckets
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+When you discover Google Cloud Storage buckets in the NetApp Console, you can use NetApp data services for backup, tiering, and data synchronization.
+
+* Use *NetApp Backup and Recovery* to back up data from your on-premises ONTAP and Cloud Volumes ONTAP systems to Google Cloud object storage.
++
+To get started, go to the Systems page and drag and drop an on-premises ONTAP or Cloud Volumes ONTAP system on your Google Cloud Storage system.
++
+https://docs.netapp.com/us-en/data-services-backup-recovery/concept-ontap-backup-to-cloud.html[Learn more about backing up ONTAP data to Google Cloud Storage^].
+
+* Use *NetApp Cloud Tiering* to tier inactive data from on-premises ONTAP clusters to Google Cloud object storage.
++
+To get started, go to the Systems page and drag and drop an on-premises ONTAP system on your Google Cloud Storage system.
++
+https://docs.netapp.com/us-en/data-services-cloud-tiering/task-tiering-onprem-gcp.html[Learn more about tiering ONTAP data to Google Cloud Storage^].
+
+* Use *NetApp Copy and Sync* to synchronize data to or from Google Cloud Storage buckets.
++
+To get started, go to the Systems page and drag and drop the source system on the target system. Your Google Cloud Storage system can be either the source or target. 
+
+You can also select your Google Cloud Storage system and click *Copy & sync* from the Services panel to synchronize data to or from Cloud Storage buckets.
+
+https://docs.netapp.com/us-en/data-services-copy-sync/concept-cloud-sync.html[Learn more about NetApp Copy and Sync service^].

@@ -1,1 +1,1 @@
-# new-repo-template
+# storage-management-google-cloud-storage
