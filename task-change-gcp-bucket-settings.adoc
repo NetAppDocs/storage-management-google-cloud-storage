@@ -1,0 +1,49 @@
+---
+sidebar: sidebar
+permalink: task-change-gcp-bucket-settings.html
+keywords: google cloud storage buckets, google cloud storage, edit buckets, change buckets
+summary: When your Google Cloud Storage system is available in the Systems page, you can change some bucket properties directly from the NetApp Console.
+---
+
+= Change Google Cloud Storage bucket settings
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+When your Google Cloud Storage system is available in the Systems page, you can change some bucket properties directly from the NetApp Console.
+
+Note that you can't change the bucket name, Google project, or protection settings.
+
+The bucket properties you can change include:
+
+* Storage class for all future objects in the bucket.
+* You can choose to add, edit, and remove labels to the objects in the bucket.
+* Turbo replication mode - only if the bucket is in a dual-region location.
+
+You can change these bucket settings directly from the NetApp Console by clicking image:button-horizontal-more.gif[the three dots more button] and then *Edit bucket details* for a bucket.
+
+image:screenshot-edit-gcp-bucket.png[A screenshot showing how to select the Edit Bucket Details button to edit bucket properties.]
+
+== Change the storage class
+
+The Storage class section enables you to make only certain changes:
+
+* If _Autoclass_ was selected when the bucket was created, you can disable Autoclass and select another storage class.
+* If any other storage class was selected when the bucket was created, you can change to any other storage class - except _Autoclass_.
+
+Objects that were in a different class will stay in that class, but any new objects will use the new class setting.
+
+== Add or change labels for objects in the bucket
+
+Labels are metadata that you can use to group resources to identify applications, environments, regions, cloud providers, and more. Labels consists of a key and a value. You can add labels to a bucket so that the labels are applied to objects when they are added to the bucket. You can also change and delete labels and label values.
+
+After you add or edit a label, click *Apply* to save your changes. If you want to add more labels, click *Add new label*. You can add up to 10 labels per bucket.
+
+== Change whether turbo replication is enabled in dual-region locations
+
+If the bucket is in a dual-region location, you can enable or disable whether turbo replication mode is enabled or disabled. "Turbo replication" enables you to guarantee geo-redundancy for all newly written objects within a target of 15 minutes.
+
+No other location details can be changed after the bucket has been created.

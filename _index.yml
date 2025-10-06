@@ -1,14 +1,30 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+  title: Google Cloud Storage documentation
+  lead: Get started using Google Cloud Storage with NetApp Console.
+  summary: Get started using Google Cloud Storage with NetApp Console.
+  keywords: google cloud storage, bluexp, system, netapp console
+  tiles:
+    - title: Get started
+      links:
+        - title: View your Google Cloud Storage buckets
+          url: task-viewing-gcp-storage.html
+    - title: Manage Google Cloud Storage buckets
+      links:
+        - title: Add buckets
+          url: task-add-gcp-bucket.html
+        - title: Change bucket settings
+          url: task-change-gcp-bucket-settings.html
+        - title: Use NetApp data services with Google Cloud Storage buckets
+          url: task-gcp-enable-data-services.html
+    - title: More information
+      links:
+        - title: Google Cloud Storage documentation for management outside of NetApp Console
+          url: https://cloud.google.com/storage/docs/creating-buckets
+    - title: Blogs & community
+      links:
+        - title: NetApp Console
+          url: https://www.netapp.com/console
+        - title: NetApp Data Services
+          url: https://www.netapp.com/data-services/
+        - title: NetApp Community
+          url: https://community.netapp.com/

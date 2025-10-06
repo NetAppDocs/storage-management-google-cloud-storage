@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: task-viewing-gcp-storage.html
+keywords: google cloud storage buckets, google cloud storage, google cloud storage working environment, system
+summary: After you install a Console agent in Google Cloud, the NetApp Console can automatically discover information about the Google Cloud buckets that reside in the Google account where the Console agent is installed. A Google Cloud Storage system is added to the NetApp Console so you can view this information.
+---
+
+= View your Google Cloud Storage buckets
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+After you install a Console agent in Google Cloud, the NetApp Console can automatically discover information about the Google Cloud Storage buckets that reside in the Google account where the Console agent is installed. A Google Cloud Storage system is added to the Console so you can view this information.
+
+You can see details about your Google Cloud Storage buckets, including the location, access status, storage class, total and used capacity, and more. These buckets can be used as destinations for NetApp Backup and Recovery, NetApp Cloud Tiering, or NetApp Copy and Sync operations.
+
+.Steps
+
+. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html[Install a Console agent^] in the Google account where you want to view your Google Cloud Storage buckets.
+
+. From the NetApp Console menu, select *Storage* and then *Management*.
+
+You should automatically see a Google Cloud Storage system shortly after.
+
+image:screenshot-gcp-cloud-storage-we.png[A screenshot of a Google Cloud Storage system.]
+
+. Select the system and select an action from the right pane if you want to enable NetApp Console services with your Google Cloud Storage.
++
+link:task-gcp-enable-data-services.html[See which NetApp Console services are available and learn how to use them with your Google Cloud Storage buckets].
+
+. Select *Enter System*, or double-click the system, to view details about the buckets in your Google account.
++
+In addition to the columns that appear by default, you can scroll the page to view additional properties for the bucket; for example, the number of Labels, and the type of encryption that has been enabled.
+
+.What's next
+
+You can change some bucket settings directly from the Console by clicking image:button-horizontal-more.gif[the three dots more button] for a bucket. link:task-change-gcp-bucket-settings.html[Go here for details].
+
+You can add new buckets by clicking *Add bucket*. link:task-add-gcp-bucket.html[Go here for details].

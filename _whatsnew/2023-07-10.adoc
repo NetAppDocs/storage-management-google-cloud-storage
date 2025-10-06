@@ -1,0 +1,4 @@
+:icons: font
+:imagesdir: ../media/
+=== Ability to add new buckets and manage existing buckets from BlueXP
+You can view Google Cloud Storage buckets on the BlueXP Canvas for quite a while. Now you can add new buckets and change properties for existing buckets directly from BlueXP. https://docs.netapp.com/us-en/storage-management-google-cloud-storage/task-add-gcp-bucket.html[See how to add new Google Cloud Storage buckets].
