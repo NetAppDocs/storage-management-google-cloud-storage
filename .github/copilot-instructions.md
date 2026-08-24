@@ -6,13 +6,6 @@ Product: Google Cloud Storage (managed through NetApp Console)
 This repository contains documentation for managing Google Cloud Storage buckets through the NetApp Console, including discovering buckets, adding and configuring buckets, and integrating buckets with NetApp data services.
 
 ### Repository structure
-- `task-viewing-gcp-storage.adoc` – How to discover and view Google Cloud Storage buckets in NetApp Console after installing a Console agent
-- `task-add-gcp-bucket.adoc` – Step-by-step instructions for adding new buckets, including project, location, storage class, protection, and encryption settings
-- `task-change-gcp-bucket-settings.adoc` – How to change editable bucket properties (storage class, labels, turbo replication) from the Console
-- `task-gcp-enable-data-services.adoc` – How to use NetApp data services (Backup and Recovery, Cloud Tiering, Copy and Sync) with Google Cloud Storage buckets
-- `task-support-registration.adoc` – How to register for NetApp support
-- `task-get-help.adoc` – How to get help and open support cases
-- `whats-new.adoc` – Release notes landing page that includes content from `_whatsnew/`
 - `_whatsnew/` – Release notes content fragments included by `whats-new.adoc`; one file per release date
 - `_include/` – Reusable AsciiDoc content fragments shared across pages
 - `media/` – Screenshots and button images referenced by documentation pages
@@ -22,7 +15,7 @@ This repository contains documentation for managing Google Cloud Storage buckets
 ### Product-specific context
 
 **Architecture and components:**
-- *NetApp Console* is the central management platform (formerly BlueXP) through which users discover and manage Google Cloud Storage; all Console operations are performed from the Console UI
+- *NetApp Console* is the central management platform through which users discover and manage Google Cloud Storage; all Console operations are performed from the Console UI
 - *Console agent* is a software component installed in a Google Cloud account; it enables the NetApp Console to automatically discover Google Cloud Storage buckets in that account
 - *Google Cloud Storage system* is the representation of a discovered Google Cloud account's storage within the NetApp Console Systems page
 - NetApp data services connect to a Google Cloud Storage system by drag-and-drop on the Systems page or through the Services panel
@@ -34,14 +27,6 @@ This repository contains documentation for managing Google Cloud Storage buckets
 - *Turbo replication* is a dual-region option that guarantees geo-redundancy for newly written objects within 15 minutes; only available for dual-region buckets
 - *Object versioning* and *retention policy* are mutually exclusive data protection tools that cannot be enabled simultaneously on the same bucket
 - *Customer-managed encryption keys (CMEK)* can replace the default Google-managed encryption keys; keys must be created in Google Cloud before bucket creation
-
-**Naming conventions and terminology:**
-- The management platform is called *NetApp Console* (not BlueXP, which was the former name)
-- The agent installed in Google Cloud is called *Console agent* (not Connector or BlueXP Connector)
-- The collection of discovered GCS resources appears as a *Google Cloud Storage system* on the Systems page
-- *Labels* in Google Cloud Storage are key:value metadata pairs (maximum 10 per bucket); the term "tag" is not used for this concept in GCS
-- NetApp data services referenced in this documentation: *NetApp Backup and Recovery*, *NetApp Cloud Tiering*, *NetApp Copy and Sync*
-- The three-dot action menu is referred to as the *more button* (image: `button-horizontal-more.gif`)
 
 **Technical constraints:**
 - Bucket name, Google project, and protection settings cannot be changed after bucket creation
