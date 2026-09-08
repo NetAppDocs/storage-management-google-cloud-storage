@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: # no keywords
 summary: # no summary
 ---
-= Legal notices
+= Legal notices for Google Cloud Storage
 :icons: font
 :imagesdir: ./media/
 
